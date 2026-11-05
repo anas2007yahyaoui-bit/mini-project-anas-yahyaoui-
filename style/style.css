@@ -1,0 +1,170 @@
+:root { 
+    /* Couleurs principales & Thème */ --primary-color: #007bff;  /* Bleu principal(Boutons,Liens au survol, bordures)*/ --primary-hover: #0056b3;        /* Bleu foncé (Effet survol bouton/lien) */ --dark-header: #1a252f;        /* Fond En-tête, Pied de page, Titre tableau */ --dark-nav: #2c3e50;             /* Fond des boutons du menu de navigation */ --dark-sub-header: #34495e;      /* Sous-titres du tableau des horaires */ 
+     
+    /* Couleurs de fond */ --bg-body: #f4f6f9;              /* Fond général de la page */ --bg-card: #ffffff;              /* Fond des cartes / conteneurs */ --bg-search: #e9ecef;            /* Fond de la barre de recherche */ --bg-placeholder: #e2e8f0;       /* Fond des emplacements d'images */ 
+     
+    /* Couleurs de texte */ --text-primary: #333333;         /* Couleur de texte principal */ --text-muted: #4a5568;           /* Texte de définition / secondaire */ --text-light: #ffffff;           /* Texte clair sur fond sombre */ --text-placeholder: #64748b;     /* Texte des images d'illustration */ --text-price: #d9534f;           /* Rouge pour l'affichage des prix */ 
+     
+    /* Couleurs de bordures */ --border-color: #dddddd;         /* Bordures des cartes */ --border-table: #cccccc;         /* Bordures des tableaux */ 
+ --border-placeholder: #cbd5e1;   /* Bordures des espaces images */
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f0f2f5   
+}
+
+.h2 {
+    border-bottom:2px solid #007bff;
+}
+.c1 {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #f4f6f9 ;
+    align-items: center;
+    padding: 8px 15px;   
+}
+
+.c11 { 
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #f4f6f9 ;
+    align-items: center;
+    padding: 8px 15px;
+    width: fit-content;
+}
+
+.c12 {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #f4f6f9 ;
+    align-items: center;
+    padding: 5px 5px;
+    width: fit-content;
+}
+
+.c2 {
+    border-radius: 5px;
+    background-color:#34495e ;
+    color: #f4f6f9;
+    align-items: center;
+    width: max-content;
+    padding: 8px 15px ;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a252f;
+    padding: 15px;
+    
+}
+
+footer {
+    display: flex;
+    background: #1a252f;
+    color:#f4f6f9 ;
+    justify-content: center;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.c3 {
+    border-radius: 4px;
+    background-color:#ffffff;
+    padding: 15px;   
+}
+
+.c4 {
+   
+    border-radius: 4px;
+    background-color: #dddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+    
+}
+    
+.c5 {
+    color: #d9534f;
+}
+
+.c6 {
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-bottom: 20px;
+}
+.c7 {
+    
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    width: 1000px;
+}
+.c8 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table,th,td {
+    border: 2px solid #dddd ;
+    border-collapse: collapse;
+    padding: 15px;
+    width: 100%;
+}
+
+th {
+    color: white;
+}
+
+thead {
+    background: #2c3e50;
+    height: 10px ;
+}
+img {
+    width: 80px;
+    height: 70px;
+}
+
+@media (min-width: 768px) {
+
+    
+    header {
+        
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 15px 30px;
+        
+    }
+
+  
+    main {
+      
+        grid-template-columns: 2fr 1fr; 
+        gap: 30px;
+        padding: 30px;
+        align-items: start; 
+    }
+    
+   
+}
